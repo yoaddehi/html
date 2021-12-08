@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!---users visible area--->
+<meta charset="UTF-8">
+<meta name ="keywords" content="poperty,homes,investment, assessment">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!---External CSS link--->
+<link rel="stylesheet" type="text/css" href="reform.css" />
+<!---Zip code script for form--->
+<script>
+	function checkZip(){
+	alert(document.form1.zip.value);
+	strZip = document.form1.zip.value;
+	var re = /^\d{5}$/;
+	if(!re.test(strZip))
+	alert("Please enter a valid zip code");
+	document.form1.zip.value = "";
+	document.form1.zip.focus();
+	return false;
+}
+
+</script>
+<!---Internal CSS link--->
+<style>
+
+a {
+color:orange;
+}
+
+img {
+vertical-align:right;
+width: 40%;height:40%;
+display:block;
+}
+
+form {
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<h1>Property Analysis</h1>
+
+<p>Buying an investment property and joining the world of real estate is exciting! Finding the best property is 
+the catch. There are two types of data to look at when doing an investment property analysis: quantitative 
+and qualitative.</p>
+
+<a href ="https://www.biggerpockets.com">BiggerPockets</a><br>
+<a href ="https://www.fhfa.gov">Federal Housing Finance Agency </a><br>
+<a href ="https://www.zillow.com">Zillow</a>
+<!---Form--->
+<h2>Property Assessment Form</h2>
+<h4> Analyzing real estate investments takes time and patience but the benefits are securing a good investment and 
+learning about different markets and properties in the meantime. Step by step guide to analyze property. The first
+ step is to enter the property address, city, state, zip code, county, asking price and square footage.  </h4>     
+<img src="house.png" alt="House" size="auto" align="right">
+<form class="form-inline" action="/action_page.php">
+  <label for="b1">Property Address:</label><br>
+  <input type="text" id="b1" name="paddress" maxlength="50" required="required"><br>
+  
+  <label for="b2">City:</label><br>
+  <input type="text" id="b2" name="city"  size="20" required><br>
+  
+  <label for="b3">State:<abbr title="This field is mandatory" aria-label="required"></abbr></label><br>
+  <input type="text" id="b3" name="state" size="20" list="t1" required pattern="[Aa]labama|[Cc]alifornia|[Dd]elaware|[Ff]lorida|
+		[Gg]eorgia|[Hh]awaii|[Ii]daho|[Kk]ansas|[Ll]ouisina|[Mm]aine|[Nn]ebraska|[Oo]hio|[Pp]ennsylvania|[Rr]hode Island|
+		[Ss]outh Carolina|[Tt]ennessee|[Uu]tah|[Vv]ermont|[Ww]ashington">
+	<datalist id="t1">
+	<option>Alabama</option>
+    <option>Alaska</option>
+    <option>Arizona</option>
+    <option>Arkansa</option>
+    <option>California</option>
+    <option>Colorado</option>
+	<option>Connecticut</option>
+	<option>Delaware</option>
+    <option>District of Columbia</option>
+    <option>Florida</option>
+    <option>Georgia</option>
+    <option>Hawaii</option>
+	<option>Idaho</option>
+    <option>Illinois</option>
+    <option>Indiana</option>
+    <option>Iowa</option>
+    <option>Kansas</option>
+    <option>Kentucky</option>
+	<option>Louisiana</option>
+    <option>Maine</option>
+    <option>Maryland</option>
+    <option>Massachuesetts</option>
+    <option>Michigan</option>
+    <option>Minnesota</option>
+	<option>Mississippi</option>
+    <option>Missouri</option>
+    <option>Montana</option>
+    <option>Nebraska</option>
+    <option>Nevada</option>
+    <option>New Hampshire</option>
+	<option>New Jersey</option>
+    <option>New Mexico</option>
+    <option>New York</option>
+    <option>North Carolina</option>
+    <option>North Dakota</option>
+    <option>Ohio</option>
+	<option>Oklahoma</option>
+    <option>Oregon</option>
+    <option>Pennsylvania</option>
+    <option>Rhode Island</option>
+    <option>South Carolina</option>
+    <option>South Dakota</option>
+	<option>Tennessee</option>
+    <option>Texas</option>
+    <option>Utah</option>
+    <option>Vermont</option>
+    <option>Virginia</option>
+    <option>Washington</option>
+	<option>West Virginia</option>
+    <option>Wisconsin</option>
+    <option>Wyoming</option>
+    </datalist><br>
+  
+  <label for="b4">Zip Code:</label><br>
+  <input type="number" id="b4" name="zcode" size="5" required onblur="checkZip()"><br>
+  
+  <label for="b5">County:</label><br>
+  <input type="text" id="b5" name="county" size="20" required><br>
+  
+  <label for="b6">Asking Price:</label><br>
+  <input type="text" id="b6" name="aprice"  size="100"  pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" required><br>
+  <label for="b7">Total Square Feet:</label><br>
+  <input type="number" id="b7" name="tsq"  size="100" required><br>
+  
+	<div id="wrapper">
+  <label for="yes_no_radio">Are you the owner?</label>
+	<p>
+	<input type="radio" name="yes_no" checked>Yes</input>
+	</p>
+	<p>
+	<input type="radio" name="yes_no">No</input>
+	</p>
+	</div>
+	
+  <br>
+  <button type="submit"  value="submit" > Submit </button>
+  <button type="reset" value="reset">Reset</button>
+	<h5 id="disp" style="color.green"></h5>
+	<h5 id="disp" style="color.red"></h5>
+</form> 
+
+
+
+</body>
+</html>
