@@ -26,7 +26,7 @@
 <style>
 
 a {
-color:orange;
+color:orange; 
 }
 
 img {
@@ -54,9 +54,11 @@ form {
 the catch. There are two types of data to look at when doing an investment property analysis: quantitative 
 and qualitative.</p>
 
+<div class="container">
 <a href ="https://www.biggerpockets.com">BiggerPockets</a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href ="https://www.fhfa.gov">Federal Housing Finance Agency </a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href ="https://www.zillow.com">Zillow</a>
+</div>
 
 <!---Form--->
 <h2>Property Assessment Form</h2>
