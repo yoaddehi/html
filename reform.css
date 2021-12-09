@@ -4,6 +4,8 @@ body { background-color: grey; }
 p { background-color: gray; }
 h1 { background-color: orange; }
  }
+a { color: #ffd9b3; }
+ }
 h2 { background-color: orange; }
  }
 label { background-color: white; }
