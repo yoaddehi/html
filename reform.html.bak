@@ -72,9 +72,9 @@ learning about different markets and properties in the meantime. Step by step gu
   <input type="text" id="b2" name="city"  size="20" required><br>
   
   <label for="b3">State:<abbr title="This field is mandatory" aria-label="required"></abbr></label><br>
-  <input type="text" id="b3" name="state" size="20" list="t1" required pattern="[Aa]labama|[Cc]alifornia|[Dd]elaware|[Ff]lorida|
-		[Gg]eorgia|[Hh]awaii|[Ii]daho|[Kk]ansas|[Ll]ouisina|[Mm]aine|[Nn]ebraska|[Oo]hio|[Pp]ennsylvania|[Rr]hode Island|
-		[Ss]outh Carolina|[Tt]ennessee|[Uu]tah|[Vv]ermont|[Ww]ashington">
+  <input type="text" id="b3" name="state" size="20" list="t1" required pattern=[ "AA","AE","AK","AL","AP","AR","AS","AZ","CA","CO","CT","DC","DE",
+  "FL","GA","GU","HI","IA","ID","IL","IN","KS","KY","LA","MA","MD","ME","MI","MN","MO","MP","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY","OH",
+  "OK","OR","PA","PR","RI","SC","SD","TN","TX","UT","VA","VI","VT","WA","WI","WV","WY" ]; >
 	<datalist id="t1">
 	<option>Alabama</option>
     <option>Alaska</option>
